@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>江西景诚建设有限公司</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=nMhmgFcAo0VPnQNuZjoZvBCP8TMOnxtx"></script>
+    <!--[if lt IE 9]>  
+		<script src=”http://html5shiv.googlecode.com/svn/trunk/html5.js”></script>   
+		<![endif]-->
+
+</head>
+
+<body>
+    <div class="loading">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <span class="logo">
+                <img src="../img/logo-topbar.png" />
+            </span>
+            <ul id="navlist" class="navlist">
+                <a href="./index.html">
+                    <li>网站首页</li>
+                </a>
+                <a href="./company-intro.html">
+                    <li>公司简介</li>
+                </a>
+                <a href="aptitude.html">
+                    <li>企业资质</li>
+                </a>
+                <a href="./project.html">
+                    <li>工程案例</li>
+                </a>
+                <a href="./joinus.html">
+                    <li>人才招聘</li>
+                </a>
+            </ul>
+            <div class="nav-icon">
+                <span class="list" id="list">&#xe607;</span>
+                <span class="close" id="close">&#xe604;</span>
+            </div>
+        </nav>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: url(../img/swiper1.jpg);background-position: center center no-repeat;"></div>
+            <div class="swiper-slide" style="background: url(../img/swiper1-1.jpg);background-position: center center no-repeat;"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="clear">
+
+    </div>
+    <div class="content">
+        <div class="course-hd">
+            <h3 class="title">
+                经营范围
+                </h2>
+                <div class="side">
+                    <p>用心创造精品</p>
+                </div>
+
+        </div>
+        <ul class="list">
+            <li class="item item-1">
+                <a href="">
+                    <i class="icon">&#xe609;</i>
+                    <h3>平面设计</h3>
+                </a>
+            </li>
+            <li class="item item-2">
+                <a href="">
+                    <i class="icon">&#xe60c;</i>
+                    <h3>工程设计</h3>
+                </a>
+            </li>
+            <li class="item item-3">
+                <a href="">
+                    <i class="icon">&#xe615;</i>
+                    <h3>装修设计</h3>
+                </a>
+            </li>
+            <li class="item item-4">
+                <a href="">
+                    <i class="icon">&#xe610;</i>
+                    <h3>建筑设计</h3>
+                </a>
+            </li>
+            <li class="item item-5">
+                <a href="">
+                    <i class="icon">&#xe614;</i>
+                    <h3>建筑施工</h3>
+            </li>
+            <li class="item item-6">
+                <a href="">
+                    <i class="icon">&#xe612;</i>
+                    <h3>消防工程</h3>
+                </a>
+            </li>
+            <li class="item item-7">
+                <a href="">
+                    <i class="icon">&#xe613;</i>
+                    <h3>水利水电工程</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="contactus content">
+        <div class="course-hd">
+            <h3 class="title">
+                联系我们
+                </h2>
+                <div class="side">
+                    <p>小小的沟通，大大的回报</p>
+                </div>
+        
+        </div>
+        <div class="contact-content">
+            <p>江西景诚建设有限公司</p>
+            <p>电  话：0798-6886790</p>
+            <p>地  址：江西省乐平市洪岩路金鑫花园</p>
+        </div>
+        <div id="allmap"></div>
+    </div>
+    <div class="grey">
+        <div class="footer">
+            <div class="footer-l">
+                <div class="copyright">
+                    Copyright © 2013-2018 江西景诚建设有限公司
+                    <span>粤ICP备909990号</span>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+<script src="http://localhost:35729/livereload.js"></script></body>
+<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper-3.3.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+   // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398, 39.897445);
+    map.centerAndZoom(point, 12);
+    // 创建地址解析器实例
+    var myGeo = new BMap.Geocoder();
+    // 将地址解析结果显示在地图上,并调整地图视野
+    myGeo.getPoint("江西省乐平市洪岩路金鑫花园", function (point) {
+        if (point) {
+            map.centerAndZoom(point, 16);
+            map.addOverlay(new BMap.Marker(point));
+        } else {
+            alert("您选择地址没有解析到结果!");
+        }
+    }, "乐平市");
+</script>
+
+</html>
